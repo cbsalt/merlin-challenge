@@ -2,12 +2,12 @@
 ## Project description
 Reproduce a page following a template
 
-### Result
-:dart: Screen
+## Result :dart: 
+### Screen
 
 <p align="center"><img src="https://github.com/cbsalt/merlin-challenge/blob/master/src/assets/images/template.PNG"></p>
 
-# :computer: Built With
+## :computer: Built With
 _This project was developed with the following technologies:_
 
 * [React](https://reactjs.org/)
@@ -15,7 +15,7 @@ _This project was developed with the following technologies:_
 * [styled-components](https://styled-components.com/)
 * [json-server](https://www.npmjs.com/package/json-server)
 
-# :information_source: To Run
+## :information_source: To Run
 
 ### Prerequisites
 
