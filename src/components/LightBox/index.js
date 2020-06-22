@@ -1,48 +1,46 @@
 import React from 'react';
+import { MdClose } from 'react-icons/md';
 
-import { Container, Image, Description, ActionButton } from './styles';
+import { Wrapper, Container, Image, Description, ActionButton } from './styles';
 
-import Bulgeye from '../../assets/images/products/bulgeye-potion.png';
-
-function LightBox() {
+function LightBox({ potion, closeLightbox }) {
   return (
-    <Container>
-      <Image>
+    <Wrapper>
+      <Container>
+        <Image>
+          <div>
+            <img src={potion.image} alt={potion.name} />
+          </div>
+        </Image>
+        <Description>
+          <text>{potion.name}</text>
+          <text>Use/Effect:</text>
+          <span>{potion.effect}</span>
+          <text>Ingredients:</text>
+          <div>
+            <span>{potion.ingredients[0]}</span>
+            <span>{potion.ingredients[1]}</span>
+            <span>{potion.ingredients[2]}</span>
+            <span>{potion.ingredients[3]}</span>
+            <span>{potion.ingredients[4]}</span>
+          </div>
+          <div>
+            <text>Price:</text>
+            <p>{potion.price} </p>
+          </div>
+        </Description>
         <div>
-          <img src={Bulgeye} alt="" />
+          <MdClose size={20} onClick={closeLightbox} />
         </div>
-      </Image>
-      <Description>
-        <text>Aging Potion</text>
-        <text>Use/Effect:</text>
-        <span>Causes the drinker to advance in age</span>
-        <text>Ingredients:</text>
-        <div>
-          <span>Red Wine</span>
-          <span>Prune Juice</span>
-          <span>Hairy Fungus</span>
-          <span>Tortoise Shell</span>
-          <span>Caterpillar</span>
-          <span>Bat Tongue</span>
-        </div>
-        <div>
-          <text>Price:</text>
-          <p>$29.99 </p>
-        </div>
-      </Description>
-      <div>
-        <button type="button" name="close-button" onClick="closeForm">
-          &times;
-        </button>
-      </div>
-      <ActionButton>
-        <div>
-          <button type="button" name="cart">
-            Add do Cart
-          </button>
-        </div>
-      </ActionButton>
-    </Container>
+        <ActionButton>
+          <div>
+            <button type="button" name="cart">
+              Add do Cart
+            </button>
+          </div>
+        </ActionButton>
+      </Container>
+    </Wrapper>
   );
 }
 

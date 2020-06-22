@@ -1,19 +1,31 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
 
+export const Wrapper = styled.div`
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+`;
+
 export const Container = styled.div`
   background: #fff;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr 0.1fr;
   padding: 40px 8px;
   border-radius: 2px;
-  width: 800px;
+  width: 60%;
+  height: 70%;
+  margin: 5vh auto;
+  position: relative;
 
-  button {
-    background: none;
-    border: none;
-    font-size: 20px;
-    font-weight: bold;
+  svg {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
   }
 `;
 
