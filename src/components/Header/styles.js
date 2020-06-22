@@ -20,13 +20,13 @@ export const Logo = styled.div`
 
     h1 {
       text-transform: uppercase;
-      font-size: 20px;
+      font-size: 26px;
       color: #d73a1e;
     }
 
     text {
       text-transform: uppercase;
-      font-size: 20px;
+      font-size: 26px;
       margin-left: 8px;
       color: #db4f26;
     }

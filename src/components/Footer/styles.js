@@ -18,12 +18,17 @@ export const Institucional = styled.div`
   display: grid;
   grid-template-rows: 0.2fr 0.5fr 1fr 1fr;
   margin-top: 10px;
+  align-items: center;
 
   > text {
     color: #d73d43;
     text-transform: uppercase;
     font-size: 20px;
     align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     @media (max-width: 800px) {
       display: none;
@@ -38,13 +43,15 @@ export const Institucional = styled.div`
 `;
 
 export const SocialMedias = styled.div`
-  grid-row: 3;
   grid-column: 1 / 4;
-  display: flex;
   align-items: center;
 
   svg {
     margin-right: 45px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 `;
 

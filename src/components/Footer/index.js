@@ -23,19 +23,19 @@ function Footer() {
           <text>Returns</text>
           <text>Careers</text>
         </>
+        <SocialMedias>
+          <FaFacebook color="#523269" size={28} />
+          <AiFillTwitterCircle color="#523269" size={28} />
+          <GrPinterest color="#523269" size={28} />
+          <FaTumblrSquare color="#523269" size={32} />
+          <FaGooglePlus color="#523269" size={28} />
+        </SocialMedias>
         <TradeMark>
           <div>
             <AiOutlineCopyright color="#846f74" size={12} />
             <text>2015 Merlin's Potions. All Rights Reserved</text>
           </div>
         </TradeMark>
-        <SocialMedias>
-          <FaFacebook color="#523269" size={28} />
-          <AiFillTwitterCircle color="#523269" size={28} />
-          <GrPinterest color="#523269" size={28} />
-          <FaTumblrSquare color="#523269" size={34} />
-          <FaGooglePlus color="#523269" size={28} />
-        </SocialMedias>
       </Institucional>
       <Newsletter>
         <div>
