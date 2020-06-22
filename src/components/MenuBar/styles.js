@@ -19,12 +19,13 @@ export const Menu = styled.div`
   align-items: center;
 
   button {
+    font-family: serif;
     font-style: italic;
+    font-size: 18px;
     background: #523468;
     border: none;
     display: flex;
     color: #fff;
-    font-size: 16px;
     padding: 15px 5px;
     margin-left: 10px;
     transition: background 0.2s;
@@ -36,11 +37,13 @@ export const Menu = styled.div`
   }
 
   li {
-    font-size: 16px;
+    font-family: serif;
+    font-style: italic;
+    font-size: 18px;
     list-style: none;
     color: #fff;
     margin-left: 10px;
-    padding: 15px;
+    padding: 18px;
     text-align: center;
     background: #422a53;
     border-radius: 6px;
@@ -57,21 +60,23 @@ export const Menu = styled.div`
 
 export const Logon = styled.div`
   display: flex;
-  font-style: italic;
   align-items: center;
 
   button {
     background: #523468;
     border: none;
+    font-family: serif;
     font-style: italic;
+    font-size: 18px;
     display: flex;
     color: #fff;
     padding: 8px;
-    font-size: 16px;
   }
 
   span {
-    font-size: 13px;
+    font-family: serif;
+    font-style: italic;
+    font-size: 16px;
     color: #ab8fab;
   }
 

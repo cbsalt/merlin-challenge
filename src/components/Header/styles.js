@@ -33,9 +33,11 @@ export const Logo = styled.div`
   }
 
   span {
+    font-weight: bold;
+    font-family: serif;
     font-style: italic;
     color: #5c4070;
-    font-size: 15px;
+    font-size: 16px;
   }
 `;
 
@@ -74,11 +76,11 @@ export const Shipping = styled.div`
   color: #db4f26;
 
   div text {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   text {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   @media (max-width: 900px) {
@@ -97,6 +99,7 @@ export const Cart = styled.div`
 
   text {
     color: #bab4b9;
+    font-family: sans-serif;
     font-size: 20px;
   }
 

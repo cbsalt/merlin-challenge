@@ -5,10 +5,11 @@ export const Container = styled.div`
   margin: 0 auto;
 
   header {
-    padding: 60px 0 10px 60px;
     background-color: #fff;
-    font-size: 22px;
+    padding: 60px 0 10px 40px;
+    font-size: 30px;
     font-weight: bold;
+    font-family: serif;
   }
 `;
 
@@ -44,10 +45,13 @@ export const Card = styled.div`
 
   text {
     color: #000;
+    font-size: 18px;
     font-weight: bold;
+    font-family: serif;
   }
 
   span {
+    font-size: 16px;
     color: #de5235;
   }
 `;

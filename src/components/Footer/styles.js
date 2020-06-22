@@ -86,22 +86,23 @@ export const Newsletter = styled.div`
 
   text {
     font-style: italic;
-    font-size: 15px;
+    font-size: 18px;
+    font-family: serif;
   }
 
   span {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   input {
-    width: 250px;
+    width: 270px;
     height: 35px;
     border-radius: 4px;
     border: 1px solid #000;
     padding: 0 12px;
 
     ::placeholder {
-      font-size: 13px;
+      font-size: 14px;
       color: #b4b4b4;
     }
   }
@@ -124,7 +125,7 @@ export const Newsletter = styled.div`
   }
 
   @media (max-width: 800px) {
-    margin-left: 0;
+    margin: auto;
     grid-row: 1;
   }
 `;

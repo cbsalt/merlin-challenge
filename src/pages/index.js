@@ -55,7 +55,7 @@ function Home() {
             <div>
               <img src={potion.image} alt={potion.name} />
               <text>{potion.name} - </text>
-              <span>$ {potion.price}</span>
+              <span>${potion.price}</span>
             </div>
           </Card>
         ))}
