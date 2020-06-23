@@ -11,6 +11,7 @@ export const Container = styled.div`
 
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
+    justify-content: center;
   }
 `;
 
@@ -36,9 +37,7 @@ export const Institucional = styled.div`
   }
 
   @media (max-width: 800px) {
-    display: block;
-    justify-self: center;
-    margin-left: auto;
+    justify-items: center;
   }
 `;
 
@@ -47,7 +46,11 @@ export const SocialMedias = styled.div`
   align-items: center;
 
   svg {
-    margin-right: 45px;
+    margin-right: 42px;
+
+    @media (max-width: 800px) {
+      margin: 16px;
+    }
 
     &:hover {
       cursor: pointer;
@@ -57,7 +60,7 @@ export const SocialMedias = styled.div`
 
 export const TradeMark = styled.div`
   grid-column: 1 / 4;
-  display: flex;
+  justify-content: center;
 
   div {
     display: flex;
@@ -94,38 +97,45 @@ export const Newsletter = styled.div`
     font-size: 16px;
   }
 
-  input {
-    width: 270px;
-    height: 35px;
-    border-radius: 4px;
-    border: 1px solid #000;
-    padding: 0 12px;
+  div {
+    input {
+      width: 270px;
+      height: 35px;
+      border-radius: 4px;
+      border: 1px solid #000;
+      padding: 0 12px;
 
-    ::placeholder {
-      font-size: 14px;
-      color: #b4b4b4;
+      ::placeholder {
+        font-size: 14px;
+        color: #b4b4b4;
+      }
     }
-  }
 
-  button {
-    margin-left: 8px;
-    text-transform: uppercase;
-    height: 35px;
-    width: 100px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    background: #d73a1e;
-    transition: background 0.3s;
+    button {
+      margin-left: 8px;
+      text-transform: uppercase;
+      height: 35px;
+      width: 100px;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      background: #d73a1e;
+      transition: background 0.3s;
 
-    &:hover {
-      background: ${darken(0.08, '#d73a1e')};
-      border-radius: 6px;
+      &:hover {
+        background: ${darken(0.08, '#d73a1e')};
+        border-radius: 6px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      display: flex;
     }
   }
 
   @media (max-width: 800px) {
     margin: auto;
     grid-row: 1;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 `;

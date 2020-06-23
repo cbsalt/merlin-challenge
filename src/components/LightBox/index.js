@@ -23,10 +23,11 @@ function LightBox({ potion, closeLightbox }) {
             <span>{potion.ingredients[2]}</span>
             <span>{potion.ingredients[3]}</span>
             <span>{potion.ingredients[4]}</span>
+            <span>{potion.ingredients[5]}</span>
           </div>
           <div>
             <text>Price:</text>
-            <p>{potion.price} </p>
+            <p>${potion.price}</p>
           </div>
         </Description>
         <div>

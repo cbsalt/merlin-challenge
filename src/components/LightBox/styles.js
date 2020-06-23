@@ -16,8 +16,8 @@ export const Container = styled.div`
   grid-template-columns: 1.2fr 0.8fr 0.1fr;
   padding: 40px 8px;
   border-radius: 2px;
-  width: 60%;
-  max-height: 70%;
+  max-width: 760px;
+  max-height: 520px;
   margin: 5vh auto;
   position: relative;
 
@@ -45,11 +45,20 @@ export const Image = styled.div`
 
 export const Description = styled.div`
   display: grid;
+  font-family: serif;
 
   text {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     padding: 8px 0;
+  }
+
+  span {
+    font-size: 19px;
+
+    @media (max-width: 800px) {
+      font-size: 16px;
+    }
   }
 
   div {
@@ -61,7 +70,7 @@ export const Description = styled.div`
   p {
     font-weight: bold;
     color: #d73a1e;
-    font-size: 15px;
+    font-size: 19px;
   }
 `;
 
@@ -71,18 +80,17 @@ export const ActionButton = styled.div`
   button {
     margin-top: 15px;
     text-transform: uppercase;
-    font-size: 14px;
-    height: 35px;
-    width: 120px;
+    font-size: 18px;
+    height: 40px;
+    width: 160px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     color: #fff;
     background: #d73a1e;
     transition: background 0.3s;
 
     &:hover {
       background: ${darken(0.08, '#d73a1e')};
-      border-radius: 6px;
     }
   }
 `;

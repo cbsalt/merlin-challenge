@@ -8,8 +8,9 @@ export const Container = styled.div`
   padding: 30px;
   align-items: center;
 
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
     justify-content: space-around;
+    padding: 0;
   }
 `;
 export const Logo = styled.div`
@@ -95,6 +96,11 @@ export const Cart = styled.div`
 
   div {
     margin-right: 30px;
+
+    @media (max-width: 800px) {
+      margin: 0;
+      display: flex;
+    }
   }
 
   text {
@@ -109,8 +115,7 @@ export const Cart = styled.div`
     font-weight: bold;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
     display: grid;
-    grid-template-columns: 1fr;
   }
 `;
