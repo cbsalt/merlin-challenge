@@ -7,6 +7,8 @@ Reproduce a page following a template
 
 <p align="center"><img src="https://github.com/cbsalt/merlin-challenge/blob/master/src/assets/images/template.PNG"></p>
 
+[Lightbox example](https://github.com/cbsalt/merlin-challenge/blob/master/src/assets/images/lightbox.gif) 
+
 ## :computer: Built With
 _This project was developed with the following technologies:_
 
